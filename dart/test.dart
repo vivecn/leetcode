@@ -1,11 +1,14 @@
-import "1417. Reformat The String.dart";
+import "1282. Group the People Given the Group Size They Belong To.dart";
 
 void main(List<String> args) {
   for (var test in tests) {
-    print(solution.reformat(test));
+    print(solution.groupThePeople(test));
   }
 }
 
 final solution = new Solution();
 
-const tests = ["a0b1c2", "leetcode", "1229857369", "a0b1c2"];
+const tests = [
+  [3, 3, 3, 3, 3, 1, 3],
+  [2, 1, 3, 3, 3, 2]
+];
