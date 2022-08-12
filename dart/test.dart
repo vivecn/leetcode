@@ -1,4 +1,4 @@
-import "1282. Group the People Given the Group Size They Belong To.dart";
+import '1200/1282. Group the People Given the Group Size They Belong To.dart';
 
 void main(List<String> args) {
   for (var test in tests) {
