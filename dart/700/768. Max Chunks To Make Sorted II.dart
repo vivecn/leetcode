@@ -29,4 +29,21 @@ class Solution {
 
     return res.length;
   }
+
+  int monotonicStack(List<int> arr) {
+    final stack = <int>[];
+    for (var n in arr) {
+      if (stack.length == 0 || n >= stack.last) {
+        stack.add(n);
+      } else {
+        var mx = stack.removeLast();
+        while (stack.length > 0 && stack.last > n) {
+          stack.removeLast();
+        }
+        stack.add(mx);
+      }
+    }
+
+    return stack.length;
+  }
 }
