@@ -30,6 +30,8 @@ class Solution {
     return res.length;
   }
 
+  /// 使用单调栈解法
+  /// 考虑当在一个块后添加新的块时会产生的影响
   int monotonicStack(List<int> arr) {
     final stack = <int>[];
     for (var n in arr) {
