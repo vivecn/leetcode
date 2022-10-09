@@ -1,4 +1,4 @@
-import { TreeNode } from "./types/TreeNode";
+import { TreeNode } from "../types/TreeNode";
 
 export default function pruneTree(root: TreeNode | null): TreeNode | null {
   if (root === null) {
